@@ -13,6 +13,6 @@ describe("Find Spaceship", function () {
   it('should return "x found" for "..x.." ', function () {
     const map = "..x..";
     const result = findSpaceship(map);
-    expect(result).toEqual("no String");
+    expect(result).toEqual("x found");
   });
 });
