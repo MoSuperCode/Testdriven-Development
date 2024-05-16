@@ -1,0 +1,6 @@
+1. string einlesen 
+2. string überprüfen // wenns kein string ist "Kein string" returnen
+3. x erkennen 
+4. wenn kein x da ist, dann "Spaceshit lost forever" returnen
+5. mehrzeiliger string // x erkennen obwohl es mehrere Zeilen gibt
+6. position zurückgeben // positon zurückgeben. 
