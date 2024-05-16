@@ -1,4 +1,3 @@
 function findSpaceship(map) {
-  let result = typeof map !== "string" ? "no String" : map.length;
-  return result;
+  return typeof map !== "string" ? "no String" : map.length;
 }
