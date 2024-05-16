@@ -6,12 +6,12 @@ function findSpaceship(map) {
 
   const rows = map.split("\n").reverse();
   console.log(rows);
-  for (i = 0; i < rows.length; i++) {
+  for (let i = 0; i < rows.length; i++) {
     const x = rows[i].indexOf("x");
-
     if (x !== -1) {
-      result += `[${rows.length - 1 - i},${x}]`;
+      result += `[${i},${x}]`;
     }
   }
+  console.log(result);
   return result;
 }

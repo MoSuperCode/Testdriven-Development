@@ -13,16 +13,18 @@ describe("Find Spaceship", function () {
   it('should return "x found" for "..x.." ', function () {
     const map = "..x..";
     const result = findSpaceship(map);
-    expect(result).toEqual("x found");
+    // expect(result).toEqual("x found");
+    expect(result).toEqual("x found[0,2]");
   });
   it('should return "x found" for ".....\n......\n....x.\n......" ', function () {
     const map = ".....\n......\n....x.\n......";
     const result = findSpaceship(map);
-    expect(result).toEqual("x found");
+    // expect(result).toEqual("x found");
+    expect(result).toEqual("x found[1,4]");
   });
   it('should return "Array with x & y" for "......\n......\n....x.\n......" ', function () {
     const map = "......\n......\n....x.\n......";
     const result = findSpaceship(map);
-    expect(result).toEqual("[1,4]");
+    expect(result).toEqual("x found[1,4]");
   });
 });
