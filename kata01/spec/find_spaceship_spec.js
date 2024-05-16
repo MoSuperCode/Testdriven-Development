@@ -20,4 +20,9 @@ describe("Find Spaceship", function () {
     const result = findSpaceship(map);
     expect(result).toEqual("x found");
   });
+  it('should return "Array with x & y" for "......\n......\n....x.\n......" ', function () {
+    const map = "......\n......\n....x.\n......";
+    const result = findSpaceship(map);
+    expect(result).toEqual("[1,4]");
+  });
 });
