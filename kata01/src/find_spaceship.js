@@ -1,1 +1,3 @@
-function findSpaceship(map) {}
+function findSpaceship(map) {
+  return map.length;
+}
