@@ -4,8 +4,7 @@ describe("Electrons around the World", function () {
   });
 
   it("should return 6 for this input: [ 1, 2, 3, 4, 5 ]", function () {
-    const input = [1, 2, 3, 4, 5];
-    const result = electronsAroundCores(input);
+    const result = elektrons.add([1, 2, 3, 4, 5]);
     expect(result).toEqual(6);
   });
 });

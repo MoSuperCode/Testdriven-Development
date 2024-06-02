@@ -1,5 +1,7 @@
 // StringCalculator.js
-function electroAroundTheWorld() {}
-electroAroundTheWorld.prototype.add = function (string_numbers) {
-  //
+function electroAroundTheWorld(inputArray) {
+  this.inputArray = inputArray;
+}
+electroAroundTheWorld.prototype.add = function (inputArray) {
+  return inputArray.length + 1;
 };
