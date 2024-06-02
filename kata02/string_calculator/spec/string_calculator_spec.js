@@ -12,4 +12,8 @@ describe("Electrons around the World", function () {
     const result = elektrons.add([2, 2, 3, 3]);
     expect(result).toEqual(4);
   });
+  it("should return 2 for this input: [ 6, 6, 4, 4, 1, 3 ]", function () {
+    const result = elektrons.add([6, 6, 4, 4, 1, 3]);
+    expect(result).toEqual(2);
+  });
 });
