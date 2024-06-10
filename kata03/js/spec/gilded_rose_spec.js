@@ -40,14 +40,19 @@ describe("Gilded Rose", function () {
     expect(items[0].sell_in).toEqual(9);
   });
   it("should degrade normal items twice as fast after sell date", function () {
-    items[1].sell_in = 0;
+    items[2].sell_in = 0;
     update_quality();
-    expect(items[1].quality).toEqual(3);
-    expect(items[1].sell_in).toEqual(-1);
+    expect(items[2].quality).toEqual(4);
+    expect(items[2].sell_in).toEqual(-1);
   });
   it("should not degrade quality below 0", function () {
     items[0].quality = 0;
     update_quality();
     expect(items[0].quality).toEqual(0);
+  });
+
+  it("should increase quality of Aged Brie over time", function () {
+    update_quality();
+    expect(items[1].quality).toEqual(1);
   });
 });
