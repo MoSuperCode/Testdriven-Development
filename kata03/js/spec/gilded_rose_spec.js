@@ -34,4 +34,9 @@ describe("Gilded Rose", function () {
     expect(items[4].quality).toEqual(20);
     expect(items[5].quality).toEqual(6);
   });
+  it("should degrade normal items before sell date", function () {
+    update_quality();
+    expect(items[0].quality).toEqual("fixme");
+    expect(items[0].sell_in).toEqual("fixme");
+  });
 });
