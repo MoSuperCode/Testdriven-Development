@@ -48,6 +48,6 @@ describe("Gilded Rose", function () {
   it("should not degrade quality below 0", function () {
     items[0].quality = 0;
     update_quality();
-    expect(items[0].quality).toEqual("");
+    expect(items[0].quality).toEqual(0);
   });
 });
