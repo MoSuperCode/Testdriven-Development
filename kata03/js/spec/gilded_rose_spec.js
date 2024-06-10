@@ -89,4 +89,10 @@ describe("Gilded Rose", function () {
     update_quality();
     expect(items[4].quality).toEqual(0);
   });
+
+  it("should degrade quality of Conjured items twice as fast after sell date", function () {
+    items[5].sell_in = 0;
+    update_quality();
+    expect(items[5].quality).toEqual(2);
+  });
 });
