@@ -84,4 +84,9 @@ describe("Gilded Rose", function () {
     update_quality();
     expect(items[4].quality).toEqual(0);
   });
+
+  it("should degrade quality of Conjured items twice as fast as normal items", function () {
+    update_quality();
+    expect(items[4].quality).toEqual(4);
+  });
 });
