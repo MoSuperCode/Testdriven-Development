@@ -63,7 +63,7 @@ describe("Gilded Rose", function () {
   });
   it("should not change quality or sell_in of Sulfuras", function () {
     update_quality();
-    expect(items[3].quality).toEqual(0);
+    expect(items[3].quality).toEqual(80);
     expect(items[3].sell_in).toEqual(0);
   });
 });
