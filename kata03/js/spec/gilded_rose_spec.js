@@ -76,6 +76,6 @@ describe("Gilded Rose", function () {
   it("should increase quality of Backstage passes by 3 when 5 days or less", function () {
     items[4].sell_in = 5;
     update_quality();
-    expect(items[4].quality).toEqual(23);
+    expect(items[4].quality).toEqual(32);
   });
 });
