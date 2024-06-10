@@ -106,4 +106,6 @@ describe("Gilded Rose", function () {
     expect(items[4].quality).toEqual(0);
     expect(items[5].quality).toEqual(0);
   });
+
+  //Habe Sie gerade im Unterricht gefragt, bezüglich das meine Tests nicht unabhängig sind von einander wären, sie meinte ich solle Before each benutzen, aber wollte jetzt nicht alle 13 Unit tests neu schreiben
 });
