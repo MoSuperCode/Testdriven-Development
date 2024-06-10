@@ -82,6 +82,6 @@ describe("Gilded Rose", function () {
   it("should drop quality of Backstage passes to 0 after concert", function () {
     items[4].sell_in = 0;
     update_quality();
-    expect(items[4].quality).toEqual();
+    expect(items[4].quality).toEqual(0);
   });
 });
