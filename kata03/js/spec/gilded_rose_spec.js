@@ -59,6 +59,6 @@ describe("Gilded Rose", function () {
   it("should not increase quality of any item above 50", function () {
     items[1].quality = 50;
     update_quality();
-    expect(items[1].quality).toEqual(0);
+    expect(items[1].quality).toEqual(50);
   });
 });
